@@ -1,0 +1,12 @@
+
+
+
+ng build --prod
+
+create bucket in project
+upload the dist and app.yaml to bucket
+
+
+gsutil rsync -r gs://angular-app-bucket-kvbc ./angular-app-gcp
+
+gcloud app deploy
